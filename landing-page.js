@@ -57,7 +57,13 @@ newLiElement3.style.fontSize = "1.25em";
 newLiElement3.style.padding = "1.25em";
 const mainHeading3 = document.querySelector('ul');
 mainHeading.appendChild(newLiElement3)
+
+
 // Add class 'active' to section when near top of viewport
+document.addEventListener('click', function() {
+  const mainHeading = document.querySelector('li');
+  mainHeading.style.backgroundColor = 'orange';
+})
 
 
 // Scroll to anchor ID using scrollTO event
